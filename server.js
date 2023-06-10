@@ -1,9 +1,10 @@
+// server.js
+
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const app = express();
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
+const app = express();
 const port = process.env.PORT || 3000;
 
 // MongoDB bağlantısı
@@ -18,18 +19,11 @@ mongoose.connect('mongodb+srv://burak:burak123.@suber.nqzo9fx.mongodb.net/suber'
     console.error('MongoDB bağlantı hatası:', err);
   });
 
-
 // JSON verileri için body-parser kullanımı
 app.use(bodyParser.json());
 
-
-
-
-
-
-
 // User modeli
-const User = mongoose.model('user', {
+const User = mongoose.model('User', {
   name: String,
   lastName: String,
   imageURL: String,
@@ -37,77 +31,118 @@ const User = mongoose.model('user', {
   username: String,
   password: String,
   confirm_password: String
-},'users');
-
+});
+const Trip = mongoose.model('Trip', {
+  driver: String,
+  car_type: String,
+  amount: String,
+  departureLocation: String,
+  arrivalLocation: String,
+  date: String
+});
+const Driver = mongoose.model('Driver', {
+  name: String,
+  lastName: String,
+  car_type: String,
+  plaka: String,
+  google_token: String
+});
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'client', 'build')));
-// Sayfa yönlendirmeleri
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-});
-0
 
-app.get('/api/users/:id', async (req, res) => {
-  const id = req.params.id;
 
-  if (!mongoose.Types.ObjectId.isValid(id)) {
-    res.status(400).send({ error: 'Invalid blog User.' });
-    return;
-  }
-
+// Trips
+app.get('/api/trips', async (req, res) => {
   try {
-    const blog = await User.findById(id);
-    if (!blog) {
-      res.status(404).send({ error: 'User not found.' });
-      return;
-    }
-    res.send(user);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send({ error: 'An error occurred while querying the database.' });
+    const trips = await Trip.find();
+    res.json(trips);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).send('Sunucu hatası');
+  }
+});
+
+// Drivers
+app.get('/api/drivers', async (req, res) => {
+  try {
+    const driver = await Driver.find();
+    res.json(driver);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).send('Sunucu hatası');
   }
 });
 
 
 
 
+
+
+
+
+
+// 
+
+// api/users endpoint'i
 app.get('/api/users', async (req, res) => {
   try {
     const users = await User.find();
     res.json(users);
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error('Error:', error);
     res.status(500).send('Sunucu hatası');
   }
 });
 
-
-app.put('/api/user/:id', async (req, res) => {
+app.get('/api/users/:id', async (req, res) => {
+  const id = req.params.id;
   try {
-    const userId = req.params.id;
-    const updatedUser = req.body;
-    mongoose.Types.ObjectId.isValid(userId)
-    await Operation.findByIdAndUpdate(userId, updatedUser);
-    res.sendStatus(204);
-  } catch (err) {
-    console.error(err);
+    const user = await User.findById(id);
+    if (!user) {
+      return res.status(404).send('Kullanıcı bulunamadı');
+    }
+    res.json(user);
+  } catch (error) {
+    console.error('Error:', error);
     res.status(500).send('Sunucu hatası');
   }
 });
 
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-
-
-const loginRouter = require('./routers/login');
-app.use('/api/login', loginRouter);
-
-
-
-// Sunucu dinlemesi
-app.listen(port, function () {
-  console.log(`Sunucu ${port} numaralı bağlantı noktasında çalışıyor.`);
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
+app.listen(port, () => {
+  console.log(`Sunucu ${port} portunda çalışıyor.`);
+});
+// silme ve düzenleme
+app.delete('/api/users/:id', async (req, res) => {
+  const id = req.params.id;
+  try {
+    const user = await User.findByIdAndDelete(id);
+    if (!user) {
+      return res.status(404).send('Kullanıcı bulunamadı');
+    }
+    res.json({ message: 'Hesap başarıyla silindi' });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).send('Sunucu hatası');
+  }
+});
 
+app.put('/api/users/:id', async (req, res) => {
+  const id = req.params.id;
+  const updatedUser = req.body;
+  try {
+    const user = await User.findByIdAndUpdate(id, updatedUser, { new: true });
+    if (!user) {
+      return res.status(404).send('Kullanıcı bulunamadı');
+    }
+    res.json(user);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).send('Sunucu hatası');
+  }
+});

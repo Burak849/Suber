@@ -1,34 +1,44 @@
-import React, { useState, useEffect,useParams} from 'react';
+// app.js
+
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Main';
-import Login from './pages/Entrance'
-import RegisterPage from './pages/Register'
-import ProfilPage from './pages/Profile'
-import ProfileEditPage from './pages/ProfileEdit'
-
+import Login from './pages/Entrance';
+import RegisterPage from './pages/Register';
+import ProfilePage from './pages/Profile';
+import ProfileEditPage from './pages/ProfileEdit';
+import DriverPage from './pages/Driver';
+import axios from 'axios';
 
 function App() {
-
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('/api/users')
-      .then(response => response.json())
-      .then(data => setUsers(data));
+    const getUsers = async () => {
+      try {
+        const response = await axios.get('/api/users');
+        setUsers(response.data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
+
+    getUsers();
   }, []);
+
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Homepage />} /> 
-      <Route path="/login-page" element={<Login />} /> 
-      <Route path="/register" element={<RegisterPage />} /> 
-      <Route path="/profile" element={<ProfilPage />} /> 
-      <Route path="/profile-edit" element={<ProfileEditPage />} /> 
-      {users.map((user) =>
-        <Route path={`/user/${user._id}`} element={<ProfilPage id={user._id} />} />)}
- 
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login-page" element={<Login />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/profile-edit" element={<ProfileEditPage />} />
+        <Route path="/arac-cagir" element={<DriverPage />} />
+        {users.map((user) => (
+          <Route key={user._id} path={`/profile/${user._id}`} element={<ProfilePage id={user._id} />} />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 
