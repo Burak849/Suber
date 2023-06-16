@@ -8,6 +8,7 @@ import RegisterPage from './pages/Register';
 import ProfilePage from './pages/Profile';
 import ProfileEditPage from './pages/ProfileEdit';
 import DriverPage from './pages/Driver';
+import AboutPage from './pages/About';
 import axios from 'axios';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/profile-edit" element={<ProfileEditPage />} />
         <Route path="/arac-cagir" element={<DriverPage />} />
+        <Route path="/about" element={<AboutPage />} />
         {users.map((user) => (
           <Route key={user._id} path={`/profile/${user._id}`} element={<ProfilePage id={user._id} />} />
         ))}

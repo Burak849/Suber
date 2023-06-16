@@ -240,31 +240,6 @@ const Profile = ({ id }) => {
         )}
       </div>
 
-          <div className='relative overflow-x-auto mt-10 w-full'>
-          <div className='mx-auto mt-10 w-80'>
-         
-          {driver ? (
-          <div className='bg-white rounded-md shadow-md'>
-            <div className='px-6 py-4'>
-              <h1 className='text-2xl font-medium text-gray-800'>{driver.name}</h1>
-              <p className='text-sm text-gray-500'>{driver.car_type}</p>
-            </div>
-            <div className='px-6 py-4'>
-              <p className='text-gray-600'>
-                <span className='font-medium'>Fiyat:</span> {driver.price}
-              </p>
-              <p className='text-gray-600'>
-                <span className='font-medium'>Plaka:</span> {driver.plate}
-              </p>
-              {/* Ek sürücü bilgilerini buraya ekleyebilirsiniz */}
-            </div>
-          </div>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </div>
-      </div>
-      
     </div>
   );
 };
