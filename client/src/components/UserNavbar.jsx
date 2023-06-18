@@ -5,7 +5,7 @@ function UserNavbar() {
     
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
+  <a href="http://localhost:3000" class="flex items-center">
      {/* Logo Degişecek */}
       <img src={Logo} class="h-16 mr-3" alt="Suber Logo" />
      
