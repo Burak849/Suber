@@ -2,7 +2,9 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 import Navbar from '../components/Navbar';
 export default function About() {
   return (
+    
     <div>
+      
     <Navbar />
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -60,19 +62,19 @@ export default function About() {
                 <li className="flex gap-x-3">
       
                   <span>
-                    <strong className="font-semibold text-gray-900">Güvenlik</strong> Plaka, sürücü adı, sürücünün fotoğrafı ve sürücünün puanı yolculara sunulmaktadır. Sürücü beğenilmezse işlem iptal edilebilir ve bir başka sürücü için çağrı yapılabilir. Bulunduğunuz konuma, çevrenizdeki araç sayısına bağlı olarak Uberfection aracının gelmesi değişkenlik gösterebilir ancak ortalama 10 dakika içerisinde belirttiğiniz konuma varmaktadır. 
+                    <strong className="font-semibold text-gray-900">Güvenlik:</strong> Plaka, sürücü adı, sürücünün fotoğrafı ve sürücünün puanı yolculara sunulmaktadır. Sürücü beğenilmezse işlem iptal edilebilir ve bir başka sürücü için çağrı yapılabilir. Bulunduğunuz konuma, çevrenizdeki araç sayısına bağlı olarak Uberfection aracının gelmesi değişkenlik gösterebilir ancak ortalama 10 dakika içerisinde belirttiğiniz konuma varmaktadır. 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
               
                   <span>
-                    <strong className="font-semibold text-gray-900">Araç çeşitliliği</strong>   UberTaxi, UberXL ve UberBlack olmak üzere 3 tip araç tipi bulunmaktadır. Yapacağınız ödeme gideceğiniz araca göre değişmektedir. Oldukça ekonomik fiyatlarla ve yolculuk sonunda değişmeyen sabit ücretlerle transfer öncesinde karar verebileceğiniz imkanlar sunar. 
+                    <strong className="font-semibold text-gray-900">Araç çeşitliliği:</strong>   UberTaxi, UberXL ve UberBlack olmak üzere 3 tip araç tipi bulunmaktadır. Yapacağınız ödeme gideceğiniz araca göre değişmektedir. Oldukça ekonomik fiyatlarla ve yolculuk sonunda değişmeyen sabit ücretlerle transfer öncesinde karar verebileceğiniz imkanlar sunar. 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
    
                   <span>
-                    <strong className="font-semibold text-gray-900">Müşteri memnuniyeti</strong>  Hızlı varış hizmetleri, güvenli ödeme işlemleri sayesinde müşteri memnuniyetine de son derece önem veren firmamız, sizleri gideceğiniz yere kadar konforlu yol deneyimi sağlamaktan memnuniyet duyar. Detaylı bilgi için lütfen bizimle iletişime geçin: 123-456-7890
+                    <strong className="font-semibold text-gray-900">Müşteri memnuniyeti:</strong>  Hızlı varış hizmetleri, güvenli ödeme işlemleri sayesinde müşteri memnuniyetine de son derece önem veren firmamız, sizleri gideceğiniz yere kadar konforlu yol deneyimi sağlamaktan memnuniyet duyar. Detaylı bilgi için lütfen bizimle iletişime geçin: 123-456-7890
                   </span>
                 </li>
               </ul>

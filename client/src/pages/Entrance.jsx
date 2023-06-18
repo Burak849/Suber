@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
+
 function Entrance() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
