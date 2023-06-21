@@ -99,7 +99,7 @@ function Driver() {
            </div>
        </div>
           ) : (
-            <p>Cagrılı araç yok</p>
+            <p>Henüz çağrılan aracınız bulunmamakta.</p>
           )}
         </div>
       </div>

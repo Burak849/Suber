@@ -12,48 +12,48 @@ export default () => {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>,
-        title: "Fast Refresh",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Hızlı",
+        desc: "Birkaç parmak hareketiyle yolculuğunuza başlayabilirsiniz."
     },
     {
         icon:
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
             </svg>,
-        title: "Analytics",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Basit Arayüz",
+        desc: "Sizi karşılayan ana ekranından birkaç dokunuşla yapabileceğiniz ve anlaşılabilirliği basit arayüzü tasarımıyla kullanımı kolay."
     },
     {
         icon:
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
             </svg>,
-        title: "Datacenter security",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Veri Güvenliği",
+        desc: "Verdiğiniz her bilgi Suber grubu tarafından kanunlara uygun bir şekilde saklanmaktadır."
     },
     {
         icon:
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
             </svg>,
-        title: "Build on your terms",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Size Göre Tasarım",
+        desc: "Farklı tip araçlar bulundurarak kapasite ve komfor ihtiyacınıza göre tasarlanmıştır."
     },
     {
         icon:
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
             </svg>,
-        title: "Safe to use",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Güvenli Yolculuk",
+        desc: "Suber tarafından özenle seçilerek işe alınmış deneyimli ve saygılı sürücüler ile seyahat gerçekleştirilir. "
     },
     {
         icon:
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
             </svg>,
-        title: "Flexible",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+        title: "Esnek",
+        desc: "Vardiyalı olarak 7/24 çalışan sürücülerimiz sayesinde günün her saatinde yolculuğunuzu tamamlamanızı sağlar."
     },
 ]
 
@@ -70,21 +70,21 @@ export default () => {
     const testimonials = [
       {
           avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-          name: "Martin escobar",
+          name: "Furkan Yıldırım",
           title: "Founder of meta",
-          quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae."
+          quote: "Suber ile yolculuğum oldukça keyifli ve eğlenceliydi. Sanırım bundan sonraki favori ulaşım platformum olacak."
       },
       {
           avatar: "https://randomuser.me/api/portraits/women/79.jpg",
           name: "Angela stian",
           title: "Product designer",
-          quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+          quote: "The best thing about Suber how they act to their passangers. The drivers are fascinating"
       },
       {
           avatar: "https://randomuser.me/api/portraits/men/86.jpg",
           name: "Karim ahmed",
           title: "DevOp engineer",
-          quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain."
+          quote: "There is no one who loves rude and bad trips itself, who seeks after it and wants to have it, simply because it makes your day bad. I can clearly tell that, you will be suprised with Suber"
       },
   ]
 
@@ -167,32 +167,17 @@ export default () => {
                 <section>
                     <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
                         <div className='flex-none space-y-5 max-w-xl'>
-                            <a href="javascript:void(0)" className='inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white'>
-                                <span className='inline-block rounded-full px-3 py-1 bg-indigo-600 text-white'>
-                                    News
-                                </span>
-                                <p className='flex items-center'>
-                                    Read the launch post from here
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                    </svg>
-                                </p>
+                            <a href="http://localhost:3000/register" className='inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white'>
                             </a>
                             <h1 className="text-4xl text-gray-800 font-extrabold sm:text-5xl">
                                 Suber ile güvenli yolculuk yapın
                             </h1>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                                İster direksiyon başında para kazanarak isterseniz de arka koltukta keyfinize bakarak yolculuğunuzu yapabilirsiniz.
                             </p>
                             <div className='flex items-center gap-x-3 sm:text-sm'>
-                                <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
-                                    Basla
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                    </svg>
-                                </a>
-                                <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
-                                    İletisim
+                                <a href="/register" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                                    Hemen başlayın
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                         <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                                     </svg>
@@ -211,10 +196,10 @@ export default () => {
         <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-600 md:px-8">
             <div className="max-w-2xl mx-auto">
                 <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                    The fastest way to launch a product
+                    Her yolculuğunuz güvenliğinize odaklı
                 </h3>
                 <p className="mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+                    Toplum ve trafik kurallarına saygılı ortam sağlama konusunda kararlıyız.
                 </p>
             </div>
             <div className="mt-12">
@@ -242,10 +227,10 @@ export default () => {
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl sm:text-center md:mx-auto">
                     <h3 className="text-white text-3xl font-semibold sm:text-4xl">
-                        See what others saying about us
+                        Hakkımızda yapılan bazı yorumlar
                     </h3>
                     <p className="mt-3 text-gray-400 ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.
+                        Kullanıcılarımızın hakkımızda yaptığı yorumlar bizim için her zaman değerlidir.
                     </p>
                 </div>
                 <div className="mt-12">
@@ -285,10 +270,10 @@ export default () => {
                             Hakkımızda
                         </h3>
                         <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                            Build your SaaS solution with help from our experts
+                            Dünyamızın ulaşımı hakkında yeni anlayışlar sağlıyoruz
                         </p>
                         <p className="mt-3 text-gray-600">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                            Suber grubu tarafından 2023 tarihinde tasarlanan sitemiz aldığı yorumlar ve tavsiyeler doğrultusunda kendini geliştirerek müşterilerine sağlayabilecek en iyi ulaşım platformu olma yolunda biz de Suber aracıyla yolculuğumuza çıktık.
                         </p>
                     </div>
                 </div>
