@@ -62,29 +62,29 @@ export default () => {
     // Replace javascript:void(0) paths with your paths
     const navigation = [
         { title: "Ana Sayfa", path: "/" },
-        { title: "Hakkımda", path: "/about" },
+        { title: "Hakkımızda", path: "/about" },
         { title: "Özelliklerimiz", path: "#stats" },
         { title: "Yorumlar", path: "#comments" },
-        { title: "Hakkımızda", path: "#about" }
+        { title: "Amacımız", path: "#about" }
     ]
     const testimonials = [
       {
           avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
           name: "Furkan Yıldırım",
-          title: "Founder of meta",
+          title: "Founder of Meta",
           quote: "Suber ile yolculuğum oldukça keyifli ve eğlenceliydi. Sanırım bundan sonraki favori ulaşım platformum olacak."
       },
       {
           avatar: "https://randomuser.me/api/portraits/women/79.jpg",
-          name: "Angela stian",
-          title: "Product designer",
+          name: "Angela Stian",
+          title: "Product Designer",
           quote: "The best thing about Suber how they act to their passangers. The drivers are fascinating"
       },
       {
           avatar: "https://randomuser.me/api/portraits/men/86.jpg",
-          name: "Karim ahmed",
-          title: "DevOp engineer",
-          quote: "There is no one who loves rude and bad trips itself, who seeks after it and wants to have it, simply because it makes your day bad. I can clearly tell that, you will be suprised with Suber"
+          name: "Karim Ahmed",
+          title: "DevOp Engineer",
+          quote: "It makes me feel happy lay back in the Suber car after an exhausted day."
       },
   ]
 
@@ -266,14 +266,11 @@ export default () => {
                         <img src="https://images.livemint.com/img/2019/10/01/1600x900/336921309_0-8_1556337045643_1569922871237.jpg" className="md:max-w-lg sm:rounded-lg" alt="" />
                     </div>
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-                        <h3 className="text-indigo-600 font-semibold">
-                            Hakkımızda
-                        </h3>
                         <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                             Dünyamızın ulaşımı hakkında yeni anlayışlar sağlıyoruz
                         </p>
                         <p className="mt-3 text-gray-600">
-                            Suber grubu tarafından 2023 tarihinde tasarlanan sitemiz aldığı yorumlar ve tavsiyeler doğrultusunda kendini geliştirerek müşterilerine sağlayabilecek en iyi ulaşım platformu olma yolunda biz de Suber aracıyla yolculuğumuza çıktık.
+                            Suber grubu tarafından 2023 tarihinde tasarlanan sitemiz aldığı yorumlar ve tavsiyeler doğrultusunda kendini geliştirerek müşterilerine sağlayabilecek en iyi ulaşım platformu olmak için biz de Suber aracıyla yolculuğumuza başladık.
                         </p>
                     </div>
                 </div>

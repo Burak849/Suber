@@ -89,7 +89,7 @@ function Driver() {
                <img class="w-24 h-24 mb-3 rounded-full shadow-lg"  src={selectedDriver.car_image} alt="Arac resmi"/>
                <h5 class="mb-1 text-xl font-medium text-gray-900 ">{selectedDriver.name}</h5>
                <span class="text-sm text-gray-500 ">{selectedDriver.plaka}</span>
-               <p className="text-sm text-gray-200">Araç şu an geliyor</p>
+               <p className="text-sm text-gray-900">Aracınız yolda lütfen bekleyiniz.</p>
                <div class="flex mt-4 space-x-3 md:mt-6">
                    <a href="#" 
                    onClick={handleCancelSelection}
@@ -99,7 +99,7 @@ function Driver() {
            </div>
        </div>
           ) : (
-            <p>Henüz çağrılan aracınız bulunmamakta.</p>
+            <p>Henüz çağrılan aracınız bulunmamaktadır.</p>
           )}
         </div>
       </div>
